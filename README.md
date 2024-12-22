@@ -80,12 +80,7 @@ pip install customtkinter pymem pillow
 ## Imagens da Janela
 
 ### Interface Principal
-Insira aqui a imagem da janela principal após executar o projeto.
-
-### Exemplo de Configuração
-Adicione uma captura do `settings.json` ou outra configuração relevante.
-
----
+![image](./app/models/src/menu.png)
 
 ## Contribuições
 
