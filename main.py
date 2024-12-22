@@ -1,4 +1,4 @@
-from app.models.mod import *
+from app.models.display import *
 
 if __name__ == "__main__":
     app = Plague()
