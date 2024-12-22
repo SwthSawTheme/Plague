@@ -74,6 +74,11 @@ pip install customtkinter pymem pillow
      pyinstaller --onefile --windowed --icon=plague.png --add-data "app;app" main.py
      ```
    - O executável será gerado no diretório `dist`.
+  
+3. **Execução pelo executavel**
+   - Acesse a pasta build.0.03
+   - Execute o Plague.exe após abrir o jogo
+   - Divirta-se
 
 ---
 
