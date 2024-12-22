@@ -1,9 +1,9 @@
 from pymem.process import *
-from pymem.exception import *
 from pymem import *
+from builtins import open
 import json
 
-with __builtins__.open("settings.json","r") as arquivo:
+with open("app/models/settings.json", "r") as arquivo:
     data = json.load(arquivo)
     name = data["module"]
 
@@ -21,7 +21,7 @@ def getPointer(base, offsets):
     addr += offsets[-1]
     return addr  # Retorna o endereço final calc
 
-def addDNA():
-    endereco = data["endereco"]
+def addDNA(value:int):
+    endereco = int(data["endereco"],16)
     offsets = [int(f"0x{offset}",16) for offset in data["offsets"]]
-    return pm.write_int(getPointer(module+endereco,offsets))
+    return pm.write_int(getPointer(module+endereco,offsets),value)

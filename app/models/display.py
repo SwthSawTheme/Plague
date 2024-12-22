@@ -1,6 +1,6 @@
 import customtkinter as ctk
 from PIL import Image
-import os
+from app.models.inject import *
 
 class Plague(ctk.CTk):
 
@@ -27,5 +27,5 @@ class Plague(ctk.CTk):
         self.entrada = ctk.CTkEntry(self, placeholder_text="Quantidade DNA")
         self.entrada.place(relx=0.5, rely=0.45, anchor="center")
 
-        self.botao_enviar = ctk.CTkButton(self, text="Inject", fg_color="#363636",hover_color="#4F4F4F")
+        self.botao_enviar = ctk.CTkButton(self, text="Inject", fg_color="#363636",hover_color="#4F4F4F",command=lambda: addDNA(int(self.entrada.get())))
         self.botao_enviar.place(relx=0.5, rely=0.55, anchor="center")
