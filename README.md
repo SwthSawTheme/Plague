@@ -58,28 +58,10 @@ pip install customtkinter pymem pillow
 ## Como Executar
 
 1. **Executar o projeto diretamente**:
-   - Navegue até o diretório raiz do projeto.
-   - Execute o arquivo `main.py`:
-     ```bash
-     python main.py
-     ```
-
-2. **Compilar para executável**:
-   - Certifique-se de ter o `PyInstaller` instalado:
-     ```bash
-     pip install pyinstaller
-     ```
-   - Compile o projeto:
-     ```bash
-     pyinstaller --onefile --windowed --icon=plague.png --add-data "app;app" main.py
-     ```
-   - O executável será gerado no diretório `dist`.
-  
-3. **Execução pelo executavel**
-   - Acesse a pasta build.0.03
+     - Acesse a pasta build.0.03
    - Execute o Plague.exe após abrir o jogo
-   - Divirta-se
-
+   - Divirta-se.py
+     ```
 ---
 
 ## Imagens da Janela
