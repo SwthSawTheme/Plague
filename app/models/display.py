@@ -9,6 +9,7 @@ class Plague(ctk.CTk):
 
         # JANELA
         self.geometry("640x360") # Tamanho da janela
+        self.iconbitmap("app/models/src/virus.ico") # icon da janela
         self.title("Plague Hack | by Swth") # Título da janela
         self._set_appearance_mode("dark") # Tema da janela
         self.resizable(False,False)   # Travar janela

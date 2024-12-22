@@ -1,6 +1,6 @@
 {
     "Title": "Plague Inc",
-    "build": "0.5",
+    "build": "0.03",
     "module": "mono-2.0-bdwgc.dll",
     "endereco": "004A0568",
     "offsets": [70,20,20,670,14]
