@@ -1,4 +1,6 @@
 import customtkinter as ctk
+from PIL import Image
+import os
 
 class Plague(ctk.CTk):
 
@@ -11,12 +13,19 @@ class Plague(ctk.CTk):
         self._set_appearance_mode("dark") # Tema da janela
         self.resizable(False,False)   # Travar janela
 
+        # Background
+        self.bg_path = "app/models/src/background.png"
+        image = Image.open(self.bg_path)
+        self.bg_image = ctk.CTkImage(dark_image=image, size=(640,360))
+
+        # Image de Fundo
+        self.bg_label = ctk.CTkLabel(self, image=self.bg_image, text="")
+        self.bg_label.place(relx=0, rely=0, relwidth=1, relheight=1)
+
         # Widgets
-        self.label_instrucoes = ctk.CTkLabel(self, text="P L A G U E",font=("Arial",14))
-        self.label_instrucoes.pack(pady=10)
 
         self.entrada = ctk.CTkEntry(self, placeholder_text="Quantidade DNA")
-        self.entrada.pack(pady=10)
+        self.entrada.place(relx=0.5, rely=0.45, anchor="center")
 
-        self.botao_enviar = ctk.CTkButton(self, text="Inject", )
-        self.botao_enviar.pack(pady=10)
+        self.botao_enviar = ctk.CTkButton(self, text="Inject", fg_color="#363636",hover_color="#4F4F4F")
+        self.botao_enviar.place(relx=0.5, rely=0.55, anchor="center")
