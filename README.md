@@ -61,7 +61,6 @@ pip install customtkinter pymem pillow
      - Acesse a pasta build.0.03
    - Execute o Plague.exe após abrir o jogo
    - Divirta-se.py
-     ```
 ---
 
 ## Imagens da Janela
