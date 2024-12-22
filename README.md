@@ -60,7 +60,7 @@ pip install customtkinter pymem pillow
 1. **Executar o projeto diretamente**:
      - Acesse a pasta build.0.03
    - Execute o Plague.exe após abrir o jogo
-   - Divirta-se.py
+   - Divirta-se
 ---
 
 ## Imagens da Janela
