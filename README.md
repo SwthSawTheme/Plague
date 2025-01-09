@@ -1,4 +1,3 @@
-
 # Plague Hack
 
 ![logo](plague.png)
